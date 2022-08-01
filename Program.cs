@@ -4,7 +4,6 @@ static class Program
 {
     private static void Main()
     {
-        CalculatorManager.Addition();
         SecondProgram();
     }
 
