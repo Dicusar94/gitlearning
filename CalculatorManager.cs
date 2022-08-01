@@ -4,10 +4,18 @@ public static class CalculatorManager
 {
     public static void Addition()
     {
-        Console.WriteLine("Two number sum calculator");
+        Console.WriteLine("Two number addition");
         var numbers = GetUserNumbers();
         var result = numbers.Item1 + numbers.Item2;
         Console.WriteLine($"{numbers.Item1} + {numbers.Item2} = {result}");
+    }
+
+    public static void Subtraction()
+    {
+        Console.WriteLine("Two number subtraction");
+        var numbers = GetUserNumbers();
+        var result = numbers.Item1 - numbers.Item2;
+        Console.WriteLine($"{numbers.Item1} - {numbers.Item2} = {result}");
     }
 
     private static void GetInput(string message, out int value)
